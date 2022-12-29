@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B2B55E4295DD9D400950F1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2B55E3295DD9D400950F1E /* AppDelegate.swift */; };
+		8B2B55E6295DD9D400950F1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2B55E5295DD9D400950F1E /* SceneDelegate.swift */; };
+		8B2B55E8295DD9D400950F1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2B55E7295DD9D400950F1E /* ViewController.swift */; };
+		8B2B55EB295DD9D400950F1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B2B55E9295DD9D400950F1E /* Main.storyboard */; };
+		8B2B55EE295DD9D400950F1E /* Bankfan.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8B2B55EC295DD9D400950F1E /* Bankfan.xcdatamodeld */; };
+		8B2B55F0295DD9D500950F1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B2B55EF295DD9D500950F1E /* Assets.xcassets */; };
+		8B2B55F3295DD9D500950F1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B2B55F1295DD9D500950F1E /* LaunchScreen.storyboard */; };
+		8B2B55FE295DD9D600950F1E /* BankfanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2B55FD295DD9D600950F1E /* BankfanTests.swift */; };
+		8B2B5608295DD9D600950F1E /* BankfanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2B5607295DD9D600950F1E /* BankfanUITests.swift */; };
+		8B2B560A295DD9D600950F1E /* BankfanUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2B5609295DD9D600950F1E /* BankfanUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B2B55FA295DD9D600950F1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B2B55D8295DD9D400950F1E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B2B55DF295DD9D400950F1E;
+			remoteInfo = Bankfan;
+		};
+		8B2B5604295DD9D600950F1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B2B55D8295DD9D400950F1E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B2B55DF295DD9D400950F1E;
+			remoteInfo = Bankfan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8B2B55E0295DD9D400950F1E /* Bankfan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bankfan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B2B55E3295DD9D400950F1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8B2B55E5295DD9D400950F1E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8B2B55E7295DD9D400950F1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8B2B55EA295DD9D400950F1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8B2B55ED295DD9D400950F1E /* Bankfan.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bankfan.xcdatamodel; sourceTree = "<group>"; };
+		8B2B55EF295DD9D500950F1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B2B55F2295DD9D500950F1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8B2B55F4295DD9D500950F1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B2B55F9295DD9D600950F1E /* BankfanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankfanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B2B55FD295DD9D600950F1E /* BankfanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankfanTests.swift; sourceTree = "<group>"; };
+		8B2B5603295DD9D600950F1E /* BankfanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankfanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B2B5607295DD9D600950F1E /* BankfanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankfanUITests.swift; sourceTree = "<group>"; };
+		8B2B5609295DD9D600950F1E /* BankfanUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankfanUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B2B55DD295DD9D400950F1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B2B55F6295DD9D600950F1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B2B5600295DD9D600950F1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B2B55D7295DD9D400950F1E = {
+			isa = PBXGroup;
+			children = (
+				8B2B55E2295DD9D400950F1E /* Bankfan */,
+				8B2B55FC295DD9D600950F1E /* BankfanTests */,
+				8B2B5606295DD9D600950F1E /* BankfanUITests */,
+				8B2B55E1295DD9D400950F1E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8B2B55E1295DD9D400950F1E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B2B55E0295DD9D400950F1E /* Bankfan.app */,
+				8B2B55F9295DD9D600950F1E /* BankfanTests.xctest */,
+				8B2B5603295DD9D600950F1E /* BankfanUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B2B55E2295DD9D400950F1E /* Bankfan */ = {
+			isa = PBXGroup;
+			children = (
+				8B2B55E3295DD9D400950F1E /* AppDelegate.swift */,
+				8B2B55E5295DD9D400950F1E /* SceneDelegate.swift */,
+				8B2B55E7295DD9D400950F1E /* ViewController.swift */,
+				8B2B55E9295DD9D400950F1E /* Main.storyboard */,
+				8B2B55EF295DD9D500950F1E /* Assets.xcassets */,
+				8B2B55F1295DD9D500950F1E /* LaunchScreen.storyboard */,
+				8B2B55F4295DD9D500950F1E /* Info.plist */,
+				8B2B55EC295DD9D400950F1E /* Bankfan.xcdatamodeld */,
+			);
+			path = Bankfan;
+			sourceTree = "<group>";
+		};
+		8B2B55FC295DD9D600950F1E /* BankfanTests */ = {
+			isa = PBXGroup;
+			children = (
+				8B2B55FD295DD9D600950F1E /* BankfanTests.swift */,
+			);
+			path = BankfanTests;
+			sourceTree = "<group>";
+		};
+		8B2B5606295DD9D600950F1E /* BankfanUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8B2B5607295DD9D600950F1E /* BankfanUITests.swift */,
+				8B2B5609295DD9D600950F1E /* BankfanUITestsLaunchTests.swift */,
+			);
+			path = BankfanUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B2B55DF295DD9D400950F1E /* Bankfan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B2B560D295DD9D600950F1E /* Build configuration list for PBXNativeTarget "Bankfan" */;
+			buildPhases = (
+				8B2B55DC295DD9D400950F1E /* Sources */,
+				8B2B55DD295DD9D400950F1E /* Frameworks */,
+				8B2B55DE295DD9D400950F1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bankfan;
+			productName = Bankfan;
+			productReference = 8B2B55E0295DD9D400950F1E /* Bankfan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8B2B55F8295DD9D600950F1E /* BankfanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B2B5610295DD9D600950F1E /* Build configuration list for PBXNativeTarget "BankfanTests" */;
+			buildPhases = (
+				8B2B55F5295DD9D600950F1E /* Sources */,
+				8B2B55F6295DD9D600950F1E /* Frameworks */,
+				8B2B55F7295DD9D600950F1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B2B55FB295DD9D600950F1E /* PBXTargetDependency */,
+			);
+			name = BankfanTests;
+			productName = BankfanTests;
+			productReference = 8B2B55F9295DD9D600950F1E /* BankfanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8B2B5602295DD9D600950F1E /* BankfanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B2B5613295DD9D600950F1E /* Build configuration list for PBXNativeTarget "BankfanUITests" */;
+			buildPhases = (
+				8B2B55FF295DD9D600950F1E /* Sources */,
+				8B2B5600295DD9D600950F1E /* Frameworks */,
+				8B2B5601295DD9D600950F1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B2B5605295DD9D600950F1E /* PBXTargetDependency */,
+			);
+			name = BankfanUITests;
+			productName = BankfanUITests;
+			productReference = 8B2B5603295DD9D600950F1E /* BankfanUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B2B55D8295DD9D400950F1E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					8B2B55DF295DD9D400950F1E = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					8B2B55F8295DD9D600950F1E = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 8B2B55DF295DD9D400950F1E;
+					};
+					8B2B5602295DD9D600950F1E = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 8B2B55DF295DD9D400950F1E;
+					};
+				};
+			};
+			buildConfigurationList = 8B2B55DB295DD9D400950F1E /* Build configuration list for PBXProject "Bankfan" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B2B55D7295DD9D400950F1E;
+			productRefGroup = 8B2B55E1295DD9D400950F1E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B2B55DF295DD9D400950F1E /* Bankfan */,
+				8B2B55F8295DD9D600950F1E /* BankfanTests */,
+				8B2B5602295DD9D600950F1E /* BankfanUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B2B55DE295DD9D400950F1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B2B55F3295DD9D500950F1E /* LaunchScreen.storyboard in Resources */,
+				8B2B55F0295DD9D500950F1E /* Assets.xcassets in Resources */,
+				8B2B55EB295DD9D400950F1E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B2B55F7295DD9D600950F1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B2B5601295DD9D600950F1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B2B55DC295DD9D400950F1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B2B55E8295DD9D400950F1E /* ViewController.swift in Sources */,
+				8B2B55EE295DD9D400950F1E /* Bankfan.xcdatamodeld in Sources */,
+				8B2B55E4295DD9D400950F1E /* AppDelegate.swift in Sources */,
+				8B2B55E6295DD9D400950F1E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B2B55F5295DD9D600950F1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B2B55FE295DD9D600950F1E /* BankfanTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B2B55FF295DD9D600950F1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B2B560A295DD9D600950F1E /* BankfanUITestsLaunchTests.swift in Sources */,
+				8B2B5608295DD9D600950F1E /* BankfanUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B2B55FB295DD9D600950F1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B2B55DF295DD9D400950F1E /* Bankfan */;
+			targetProxy = 8B2B55FA295DD9D600950F1E /* PBXContainerItemProxy */;
+		};
+		8B2B5605295DD9D600950F1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B2B55DF295DD9D400950F1E /* Bankfan */;
+			targetProxy = 8B2B5604295DD9D600950F1E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8B2B55E9295DD9D400950F1E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B2B55EA295DD9D400950F1E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8B2B55F1295DD9D500950F1E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B2B55F2295DD9D500950F1E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8B2B560B295DD9D600950F1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8B2B560C295DD9D600950F1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B2B560E295DD9D600950F1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N4JXQZ23WC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Bankfan/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Arfanxn.Bankfan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8B2B560F295DD9D600950F1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N4JXQZ23WC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Bankfan/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Arfanxn.Bankfan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8B2B5611295DD9D600950F1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N4JXQZ23WC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Arfanxn.BankfanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bankfan.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Bankfan";
+			};
+			name = Debug;
+		};
+		8B2B5612295DD9D600950F1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N4JXQZ23WC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Arfanxn.BankfanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bankfan.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Bankfan";
+			};
+			name = Release;
+		};
+		8B2B5614295DD9D600950F1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N4JXQZ23WC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Arfanxn.BankfanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Bankfan;
+			};
+			name = Debug;
+		};
+		8B2B5615295DD9D600950F1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N4JXQZ23WC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Arfanxn.BankfanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Bankfan;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B2B55DB295DD9D400950F1E /* Build configuration list for PBXProject "Bankfan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B2B560B295DD9D600950F1E /* Debug */,
+				8B2B560C295DD9D600950F1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B2B560D295DD9D600950F1E /* Build configuration list for PBXNativeTarget "Bankfan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B2B560E295DD9D600950F1E /* Debug */,
+				8B2B560F295DD9D600950F1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B2B5610295DD9D600950F1E /* Build configuration list for PBXNativeTarget "BankfanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B2B5611295DD9D600950F1E /* Debug */,
+				8B2B5612295DD9D600950F1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B2B5613295DD9D600950F1E /* Build configuration list for PBXNativeTarget "BankfanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B2B5614295DD9D600950F1E /* Debug */,
+				8B2B5615295DD9D600950F1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8B2B55EC295DD9D400950F1E /* Bankfan.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8B2B55ED295DD9D400950F1E /* Bankfan.xcdatamodel */,
+			);
+			currentVersion = 8B2B55ED295DD9D400950F1E /* Bankfan.xcdatamodel */;
+			path = Bankfan.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8B2B55D8295DD9D400950F1E /* Project object */;
+}
