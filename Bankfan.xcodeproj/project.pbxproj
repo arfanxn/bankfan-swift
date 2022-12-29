@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8B29E144295DDB1F00951DD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B29E143295DDB1F00951DD8 /* ViewController.swift */; };
+		8B29E144295DDB1F00951DD8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B29E143295DDB1F00951DD8 /* LoginViewController.swift */; };
+		8B29E14A295DE41500951DD8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B29E149295DE41500951DD8 /* LoginView.swift */; };
 		8B2B55E4295DD9D400950F1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2B55E3295DD9D400950F1E /* AppDelegate.swift */; };
-		8B2B55E6295DD9D400950F1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2B55E5295DD9D400950F1E /* SceneDelegate.swift */; };
 		8B2B55EE295DD9D400950F1E /* Bankfan.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8B2B55EC295DD9D400950F1E /* Bankfan.xcdatamodeld */; };
 		8B2B55F0295DD9D500950F1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B2B55EF295DD9D500950F1E /* Assets.xcassets */; };
 		8B2B55F3295DD9D500950F1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B2B55F1295DD9D500950F1E /* LaunchScreen.storyboard */; };
@@ -36,10 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8B29E143295DDB1F00951DD8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8B29E143295DDB1F00951DD8 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8B29E149295DE41500951DD8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		8B2B55E0295DD9D400950F1E /* Bankfan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bankfan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B2B55E3295DD9D400950F1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8B2B55E5295DD9D400950F1E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8B2B55ED295DD9D400950F1E /* Bankfan.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bankfan.xcdatamodel; sourceTree = "<group>"; };
 		8B2B55EF295DD9D500950F1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B2B55F2295DD9D500950F1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,6 +76,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B29E146295DE3EC00951DD8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8B29E143295DDB1F00951DD8 /* LoginViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8B29E147295DE40400951DD8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8B29E148295DE40900951DD8 /* Login */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8B29E148295DE40900951DD8 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8B29E149295DE41500951DD8 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		8B2B55D7295DD9D400950F1E = {
 			isa = PBXGroup;
 			children = (
@@ -102,10 +126,10 @@
 				8B2B55E3295DD9D400950F1E /* AppDelegate.swift */,
 				8B2B55EF295DD9D500950F1E /* Assets.xcassets */,
 				8B2B55EC295DD9D400950F1E /* Bankfan.xcdatamodeld */,
+				8B29E146295DE3EC00951DD8 /* Controllers */,
 				8B2B55F4295DD9D500950F1E /* Info.plist */,
 				8B2B55F1295DD9D500950F1E /* LaunchScreen.storyboard */,
-				8B2B55E5295DD9D400950F1E /* SceneDelegate.swift */,
-				8B29E143295DDB1F00951DD8 /* ViewController.swift */,
+				8B29E147295DE40400951DD8 /* Views */,
 			);
 			path = Bankfan;
 			sourceTree = "<group>";
@@ -259,8 +283,8 @@
 			files = (
 				8B2B55EE295DD9D400950F1E /* Bankfan.xcdatamodeld in Sources */,
 				8B2B55E4295DD9D400950F1E /* AppDelegate.swift in Sources */,
-				8B29E144295DDB1F00951DD8 /* ViewController.swift in Sources */,
-				8B2B55E6295DD9D400950F1E /* SceneDelegate.swift in Sources */,
+				8B29E14A295DE41500951DD8 /* LoginView.swift in Sources */,
+				8B29E144295DDB1F00951DD8 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
