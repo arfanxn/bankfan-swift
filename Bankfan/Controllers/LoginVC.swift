@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  LoginVC.swift
 //  Bankfan
 //
 //  Created by Muhammad Arfan on 29/12/22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginVC: UIViewController {
     
     private let titleLabel = UILabel()
     private let subtitleLabel = UILabel()
@@ -29,7 +29,7 @@ class LoginViewController: UIViewController {
     
 }
 
-extension LoginViewController {
+extension LoginVC {
     
     private func style () {
         self.titleLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -104,7 +104,7 @@ extension LoginViewController {
     }
 }
 
-extension LoginViewController {
+extension LoginVC {
     @objc private func signInBtnTapped () {
         self.errorMessageLabel.isHidden = true
         self.login()
