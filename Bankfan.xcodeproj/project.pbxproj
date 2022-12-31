@@ -10,6 +10,7 @@
 		8B29E144295DDB1F00951DD8 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B29E143295DDB1F00951DD8 /* LoginVC.swift */; };
 		8B29E14A295DE41500951DD8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B29E149295DE41500951DD8 /* LoginView.swift */; };
 		8B29E14C295F1F5000951DD8 /* OnboardingContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B29E14B295F1F5000951DD8 /* OnboardingContainerVC.swift */; };
+		8B29E1582960174300951DD8 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B29E1572960174300951DD8 /* OnboardingVC.swift */; };
 		8B2B55E4295DD9D400950F1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2B55E3295DD9D400950F1E /* AppDelegate.swift */; };
 		8B2B55EE295DD9D400950F1E /* Bankfan.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8B2B55EC295DD9D400950F1E /* Bankfan.xcdatamodeld */; };
 		8B2B55F0295DD9D500950F1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B2B55EF295DD9D500950F1E /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		8B29E143295DDB1F00951DD8 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		8B29E149295DE41500951DD8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		8B29E14B295F1F5000951DD8 /* OnboardingContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerVC.swift; sourceTree = "<group>"; };
+		8B29E1572960174300951DD8 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
 		8B2B55E0295DD9D400950F1E /* Bankfan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bankfan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B2B55E3295DD9D400950F1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B2B55ED295DD9D400950F1E /* Bankfan.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bankfan.xcdatamodel; sourceTree = "<group>"; };
@@ -81,8 +83,8 @@
 		8B29E146295DE3EC00951DD8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				8B29E143295DDB1F00951DD8 /* LoginVC.swift */,
-				8B29E14B295F1F5000951DD8 /* OnboardingContainerVC.swift */,
+				8B29E15A2960176300951DD8 /* Auth */,
+				8B29E1592960174F00951DD8 /* Onboarding */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -101,6 +103,23 @@
 				8B29E149295DE41500951DD8 /* LoginView.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		8B29E1592960174F00951DD8 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				8B29E14B295F1F5000951DD8 /* OnboardingContainerVC.swift */,
+				8B29E1572960174300951DD8 /* OnboardingVC.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		8B29E15A2960176300951DD8 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				8B29E143295DDB1F00951DD8 /* LoginVC.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		8B2B55D7295DD9D400950F1E = {
@@ -285,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B2B55EE295DD9D400950F1E /* Bankfan.xcdatamodeld in Sources */,
+				8B29E1582960174300951DD8 /* OnboardingVC.swift in Sources */,
 				8B2B55E4295DD9D400950F1E /* AppDelegate.swift in Sources */,
 				8B29E14C295F1F5000951DD8 /* OnboardingContainerVC.swift in Sources */,
 				8B29E14A295DE41500951DD8 /* LoginView.swift in Sources */,

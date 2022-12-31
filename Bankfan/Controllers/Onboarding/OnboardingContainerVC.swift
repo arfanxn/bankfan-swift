@@ -8,7 +8,11 @@ import UIKit
 
 class OnboardingContainerVC: UIViewController {
     let pageViewController: UIPageViewController
-    var pages = [UIViewController]()
+    let pages : [OnboardingVC] = [
+        .init(imgName: "delorean", title: "Bankey is faster, easier to use, and has a brand new look and feel that will make you feel like you are back in the 80s."),
+        .init(imgName: "world", title: "Move your money around the world quickly and securely."),
+        .init(imgName: "thumbs", title: "Learn more at www.bankey.com.")
+    ]
     var currentVC: UIViewController {
         didSet {
         }
@@ -16,14 +20,6 @@ class OnboardingContainerVC: UIViewController {
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         self.pageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
-        
-        let page1 = ViewController1()
-        let page2 = ViewController2()
-        let page3 = ViewController3()
-        
-        pages.append(page1)
-        pages.append(page2)
-        pages.append(page3)
         
         currentVC = pages.first!
         
@@ -70,13 +66,13 @@ extension OnboardingContainerVC : UIPageViewControllerDataSource {
     }
     
     private func getPreviousViewController(from viewController: UIViewController) -> UIViewController? {
-        guard let index = pages.firstIndex(of: viewController), index - 1 >= 0 else { return nil }
+        guard let index = pages.firstIndex(of: viewController as! OnboardingVC), index - 1 >= 0 else { return nil }
         currentVC = pages[index - 1]
         return pages[index - 1]
     }
     
     private func getNextViewController(from viewController: UIViewController) -> UIViewController? {
-        guard let index = pages.firstIndex(of: viewController), index + 1 < pages.count else { return nil }
+        guard let index = pages.firstIndex(of: viewController as! OnboardingVC), index + 1 < pages.count else { return nil }
         currentVC = pages[index + 1]
         return pages[index + 1]
     }
@@ -86,7 +82,7 @@ extension OnboardingContainerVC : UIPageViewControllerDataSource {
     }
     
     func presentationIndex(for pageViewController: UIPageViewController) -> Int {
-        return pages.firstIndex(of: self.currentVC) ?? 0
+        return pages.firstIndex(of: self.currentVC as! OnboardingVC) ?? 0
     }
 }
 
