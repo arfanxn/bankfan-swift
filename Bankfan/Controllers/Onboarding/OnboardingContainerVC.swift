@@ -13,10 +13,8 @@ class OnboardingContainerVC: UIViewController {
         .init(imgName: "world", title: "Move your money around the world quickly and securely."),
         .init(imgName: "thumbs", title: "Learn more at www.bankey.com.")
     ]
-    var currentVC: UIViewController {
-        didSet {
-        }
-    }
+    var currentVC: UIViewController
+    let closeBtn = UIButton(type: .system)
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         self.pageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
@@ -33,8 +31,15 @@ class OnboardingContainerVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .systemPurple
-        
+        self.setup()
+        self.style()
+        self.layout()
+    }
+}
+
+extension OnboardingContainerVC {
+    
+    private func setup () {
         addChild(pageViewController)
         view.addSubview(pageViewController.view)
         pageViewController.didMove(toParent: self)
@@ -42,6 +47,23 @@ class OnboardingContainerVC: UIViewController {
         pageViewController.dataSource = self
         pageViewController.view.translatesAutoresizingMaskIntoConstraints = false
         
+        pageViewController.setViewControllers([pages.first!], direction: .forward, animated: false, completion: nil)
+        currentVC = pages.first!
+    }
+    
+    private func style () {
+        // Self
+        view.backgroundColor = .systemPurple
+        
+        // Close Button
+        closeBtn.translatesAutoresizingMaskIntoConstraints = false
+        closeBtn.setTitle("Close", for: .normal)
+        closeBtn.addTarget(self, action: #selector(self.closeBtnTapped), for: .primaryActionTriggered)
+        view.addSubview(closeBtn)
+    }
+    
+    private func layout () {
+        // Page View
         NSLayoutConstraint.activate([
             view.topAnchor.constraint(equalTo: pageViewController.view.topAnchor),
             view.leadingAnchor.constraint(equalTo: pageViewController.view.leadingAnchor),
@@ -49,10 +71,23 @@ class OnboardingContainerVC: UIViewController {
             view.bottomAnchor.constraint(equalTo: pageViewController.view.bottomAnchor),
         ])
         
-        pageViewController.setViewControllers([pages.first!], direction: .forward, animated: false, completion: nil)
-        currentVC = pages.first!
+        // Close Button
+        NSLayoutConstraint.activate([
+            closeBtn.leadingAnchor.constraint(equalToSystemSpacingAfter: view.leadingAnchor , multiplier: 2),
+            closeBtn.topAnchor.constraint(equalToSystemSpacingBelow: view.safeAreaLayoutGuide.topAnchor, multiplier: 2),
+            
+        ])
+    }
+    
+}
+
+// MARK: - Actions
+extension OnboardingContainerVC  {
+    @objc private func closeBtnTapped () {
+        
     }
 }
+
 
 // MARK: - UIPageViewControllerDataSource
 extension OnboardingContainerVC : UIPageViewControllerDataSource {
@@ -83,27 +118,5 @@ extension OnboardingContainerVC : UIPageViewControllerDataSource {
     
     func presentationIndex(for pageViewController: UIPageViewController) -> Int {
         return pages.firstIndex(of: self.currentVC as! OnboardingVC) ?? 0
-    }
-}
-
-// MARK: - ViewControllers
-class ViewController1: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .systemRed
-    }
-}
-
-class ViewController2: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .systemGreen
-    }
-}
-
-class ViewController3: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .systemBlue
     }
 }
