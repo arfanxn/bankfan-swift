@@ -94,6 +94,7 @@ extension OnboardingContainerVC {
 // MARK: - Actions
 extension OnboardingContainerVC  {
     @objc private func closeBtnTapped () {
+        LocalState.hasOnboarded = true
         self.delegate?.didFinishOnboarding()
     }
 }

@@ -35,6 +35,11 @@ class LoginVC: UIViewController {
         
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        signInBtn.configuration?.showsActivityIndicator = false
+    }
+    
 }
 
 extension LoginVC {

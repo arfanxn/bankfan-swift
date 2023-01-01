@@ -14,13 +14,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     private let loginVC = LoginVC()
+    private let mainVC = MainVC()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         window?.backgroundColor = .systemBackground
         loginVC.delegate = self
-        self.setRootViewController(loginVC)
+        self.setRootViewController( mainVC)
         
         return true
     }
@@ -30,11 +31,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 // MARK: - LoginVCDelegate
 extension AppDelegate : LoginVCDelegate {
     func didLogin() {
-        self.setRootViewController(OnboardingContainerVC())
+        if LocalState.hasOnboarded {
+            self.setRootViewController(LogoutVC())
+        } else {
+            self.setRootViewController(OnboardingContainerVC())
+        }
     }
 }
 
+extension AppDelegate: LogoutVCDelegate {
+    func didLogout() {
+        setRootViewController(self.loginVC)
+    }
+}
 
+// MARK: Methods
 extension AppDelegate {
     private func setRootViewController (_ vc : UIViewController, animated : Bool = true) {
         guard animated, let window = self.window else {

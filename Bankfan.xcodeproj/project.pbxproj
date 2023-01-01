@@ -18,6 +18,15 @@
 		8B2B55FE295DD9D600950F1E /* BankfanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2B55FD295DD9D600950F1E /* BankfanTests.swift */; };
 		8B2B5608295DD9D600950F1E /* BankfanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2B5607295DD9D600950F1E /* BankfanUITests.swift */; };
 		8B2B560A295DD9D600950F1E /* BankfanUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2B5609295DD9D600950F1E /* BankfanUITestsLaunchTests.swift */; };
+		8B2FA359296106B60057A74D /* LogoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2FA358296106B60057A74D /* LogoutVC.swift */; };
+		8B2FA35C29616B980057A74D /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2FA35B29616B980057A74D /* LocalState.swift */; };
+		8B37934A2961B239006AFA96 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3793492961B239006AFA96 /* UIColor.swift */; };
+		8B37934C2961B390006AFA96 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B37934B2961B390006AFA96 /* UIViewController.swift */; };
+		8B37934E2961B60C006AFA96 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B37934D2961B60C006AFA96 /* MainVC.swift */; };
+		8B3793502961B6F4006AFA96 /* AccountSummaryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B37934F2961B6F4006AFA96 /* AccountSummaryVC.swift */; };
+		8B3793522961B70B006AFA96 /* MoveMoneyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3793512961B70B006AFA96 /* MoveMoneyVC.swift */; };
+		8B3793542961B71B006AFA96 /* MoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3793532961B71B006AFA96 /* MoreVC.swift */; };
+		8B3793562961B8D3006AFA96 /* UINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3793552961B8D3006AFA96 /* UINavigationBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +62,15 @@
 		8B2B5603295DD9D600950F1E /* BankfanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankfanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B2B5607295DD9D600950F1E /* BankfanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankfanUITests.swift; sourceTree = "<group>"; };
 		8B2B5609295DD9D600950F1E /* BankfanUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankfanUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8B2FA358296106B60057A74D /* LogoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutVC.swift; sourceTree = "<group>"; };
+		8B2FA35B29616B980057A74D /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
+		8B3793492961B239006AFA96 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		8B37934B2961B390006AFA96 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		8B37934D2961B60C006AFA96 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		8B37934F2961B6F4006AFA96 /* AccountSummaryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryVC.swift; sourceTree = "<group>"; };
+		8B3793512961B70B006AFA96 /* MoveMoneyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveMoneyVC.swift; sourceTree = "<group>"; };
+		8B3793532961B71B006AFA96 /* MoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreVC.swift; sourceTree = "<group>"; };
+		8B3793552961B8D3006AFA96 /* UINavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +103,10 @@
 			children = (
 				8B29E15A2960176300951DD8 /* Auth */,
 				8B29E1592960174F00951DD8 /* Onboarding */,
+				8B37934D2961B60C006AFA96 /* MainVC.swift */,
+				8B37934F2961B6F4006AFA96 /* AccountSummaryVC.swift */,
+				8B3793512961B70B006AFA96 /* MoveMoneyVC.swift */,
+				8B3793532961B71B006AFA96 /* MoreVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -117,6 +139,7 @@
 		8B29E15A2960176300951DD8 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				8B2FA358296106B60057A74D /* LogoutVC.swift */,
 				8B29E143295DDB1F00951DD8 /* LoginVC.swift */,
 			);
 			path = Auth;
@@ -145,6 +168,8 @@
 		8B2B55E2295DD9D400950F1E /* Bankfan */ = {
 			isa = PBXGroup;
 			children = (
+				8B3793482961B22C006AFA96 /* Extensions */,
+				8B2FA35A29616B8D0057A74D /* Utilities */,
 				8B2B55E3295DD9D400950F1E /* AppDelegate.swift */,
 				8B2B55EF295DD9D500950F1E /* Assets.xcassets */,
 				8B2B55EC295DD9D400950F1E /* Bankfan.xcdatamodeld */,
@@ -171,6 +196,24 @@
 				8B2B5609295DD9D600950F1E /* BankfanUITestsLaunchTests.swift */,
 			);
 			path = BankfanUITests;
+			sourceTree = "<group>";
+		};
+		8B2FA35A29616B8D0057A74D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8B2FA35B29616B980057A74D /* LocalState.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		8B3793482961B22C006AFA96 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8B3793492961B239006AFA96 /* UIColor.swift */,
+				8B37934B2961B390006AFA96 /* UIViewController.swift */,
+				8B3793552961B8D3006AFA96 /* UINavigationBar.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,10 +348,19 @@
 			files = (
 				8B2B55EE295DD9D400950F1E /* Bankfan.xcdatamodeld in Sources */,
 				8B29E1582960174300951DD8 /* OnboardingVC.swift in Sources */,
+				8B2FA359296106B60057A74D /* LogoutVC.swift in Sources */,
+				8B3793542961B71B006AFA96 /* MoreVC.swift in Sources */,
 				8B2B55E4295DD9D400950F1E /* AppDelegate.swift in Sources */,
+				8B37934E2961B60C006AFA96 /* MainVC.swift in Sources */,
+				8B3793502961B6F4006AFA96 /* AccountSummaryVC.swift in Sources */,
+				8B37934C2961B390006AFA96 /* UIViewController.swift in Sources */,
+				8B37934A2961B239006AFA96 /* UIColor.swift in Sources */,
+				8B3793562961B8D3006AFA96 /* UINavigationBar.swift in Sources */,
 				8B29E14C295F1F5000951DD8 /* OnboardingContainerVC.swift in Sources */,
 				8B29E14A295DE41500951DD8 /* LoginView.swift in Sources */,
 				8B29E144295DDB1F00951DD8 /* LoginVC.swift in Sources */,
+				8B3793522961B70B006AFA96 /* MoveMoneyVC.swift in Sources */,
+				8B2FA35C29616B980057A74D /* LocalState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
