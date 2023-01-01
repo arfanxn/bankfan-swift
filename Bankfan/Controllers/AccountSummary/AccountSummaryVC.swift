@@ -38,6 +38,10 @@ extension AccountSummaryVC {
         tableView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(tableView)
         
+        tableView.register(AccountSummaryTableViewCell.self, forCellReuseIdentifier: AccountSummaryTableViewCell.identifier)
+        tableView.rowHeight = AccountSummaryTableViewCell.rowHeight
+        tableView.tableFooterView = UIView()
+        
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             tableView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
@@ -61,8 +65,7 @@ extension AccountSummaryVC {
 // MARK: - Table View Data Source
 extension AccountSummaryVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.textLabel?.text = games[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: AccountSummaryTableViewCell.identifier, for: indexPath) as! AccountSummaryTableViewCell
         return cell
     }
     
