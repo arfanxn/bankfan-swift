@@ -6,14 +6,25 @@
 //
 import UIKit
 
+protocol OnboardingContainerVCDelegate : AnyObject {
+    func didFinishOnboarding()
+}
+
 class OnboardingContainerVC: UIViewController {
+    
+    // Controller
     let pageViewController: UIPageViewController
+    var currentVC: UIViewController
+    
+    // Objects
+    public weak var delegate : OnboardingContainerVCDelegate?
     let pages : [OnboardingVC] = [
         .init(imgName: "delorean", title: "Bankey is faster, easier to use, and has a brand new look and feel that will make you feel like you are back in the 80s."),
         .init(imgName: "world", title: "Move your money around the world quickly and securely."),
         .init(imgName: "thumbs", title: "Learn more at www.bankey.com.")
     ]
-    var currentVC: UIViewController
+    
+    // View
     let closeBtn = UIButton(type: .system)
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
@@ -75,7 +86,6 @@ extension OnboardingContainerVC {
         NSLayoutConstraint.activate([
             closeBtn.leadingAnchor.constraint(equalToSystemSpacingAfter: view.leadingAnchor , multiplier: 2),
             closeBtn.topAnchor.constraint(equalToSystemSpacingBelow: view.safeAreaLayoutGuide.topAnchor, multiplier: 2),
-            
         ])
     }
     
@@ -84,7 +94,7 @@ extension OnboardingContainerVC {
 // MARK: - Actions
 extension OnboardingContainerVC  {
     @objc private func closeBtnTapped () {
-        
+        self.delegate?.didFinishOnboarding()
     }
 }
 

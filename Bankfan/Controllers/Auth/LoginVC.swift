@@ -7,8 +7,16 @@
 
 import UIKit
 
+protocol LoginVCDelegate : AnyObject {
+    func didLogin()
+}
+
 class LoginVC: UIViewController {
     
+    // Object
+    public weak var delegate : LoginVCDelegate?
+    
+    // Views
     private let titleLabel = UILabel()
     private let subtitleLabel = UILabel()
     private let loginView = LoginView()
@@ -62,8 +70,8 @@ extension LoginVC {
     }
     
     private func layout () {
-        view.addSubview(titleLabel)
-        view.addSubview(subtitleLabel)
+        view.addSubview(self.titleLabel)
+        view.addSubview(self.subtitleLabel)
         view.addSubview(self.loginView)
         view.addSubview(self.signInBtn)
         view.addSubview(self.errorMessageLabel)
@@ -114,6 +122,8 @@ extension LoginVC {
         guard let username = self.credentials.username, let password = self.credentials.password else { return}
         
         self.signInBtn.configuration?.showsActivityIndicator = true
+        
+        self.delegate?.didLogin()
         return;
         
         if username.isEmpty || password.isEmpty {
