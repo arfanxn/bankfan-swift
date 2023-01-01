@@ -21,7 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         window?.backgroundColor = .systemBackground
         loginVC.delegate = self
-        self.setRootViewController( mainVC)
+//        self.setRootViewController( mainVC)
+        self.setRootViewController(AccountSummaryVC())
         
         return true
     }

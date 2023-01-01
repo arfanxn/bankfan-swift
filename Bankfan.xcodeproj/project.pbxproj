@@ -27,6 +27,8 @@
 		8B3793522961B70B006AFA96 /* MoveMoneyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3793512961B70B006AFA96 /* MoveMoneyVC.swift */; };
 		8B3793542961B71B006AFA96 /* MoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3793532961B71B006AFA96 /* MoreVC.swift */; };
 		8B3793562961B8D3006AFA96 /* UINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3793552961B8D3006AFA96 /* UINavigationBar.swift */; };
+		8B3793592961D1BA006AFA96 /* AccountSummaryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3793582961D1BA006AFA96 /* AccountSummaryHeaderView.swift */; };
+		8B37935B2961D212006AFA96 /* AccountSummaryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B37935A2961D212006AFA96 /* AccountSummaryHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		8B3793512961B70B006AFA96 /* MoveMoneyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveMoneyVC.swift; sourceTree = "<group>"; };
 		8B3793532961B71B006AFA96 /* MoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreVC.swift; sourceTree = "<group>"; };
 		8B3793552961B8D3006AFA96 /* UINavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBar.swift; sourceTree = "<group>"; };
+		8B3793582961D1BA006AFA96 /* AccountSummaryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryHeaderView.swift; sourceTree = "<group>"; };
+		8B37935A2961D212006AFA96 /* AccountSummaryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountSummaryHeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +105,10 @@
 		8B29E146295DE3EC00951DD8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8B3793572961D190006AFA96 /* AccountSummary */,
 				8B29E15A2960176300951DD8 /* Auth */,
 				8B29E1592960174F00951DD8 /* Onboarding */,
 				8B37934D2961B60C006AFA96 /* MainVC.swift */,
-				8B37934F2961B6F4006AFA96 /* AccountSummaryVC.swift */,
 				8B3793512961B70B006AFA96 /* MoveMoneyVC.swift */,
 				8B3793532961B71B006AFA96 /* MoreVC.swift */,
 			);
@@ -216,6 +220,16 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		8B3793572961D190006AFA96 /* AccountSummary */ = {
+			isa = PBXGroup;
+			children = (
+				8B37934F2961B6F4006AFA96 /* AccountSummaryVC.swift */,
+				8B3793582961D1BA006AFA96 /* AccountSummaryHeaderView.swift */,
+				8B37935A2961D212006AFA96 /* AccountSummaryHeaderView.xib */,
+			);
+			path = AccountSummary;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -320,6 +334,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B37935B2961D212006AFA96 /* AccountSummaryHeaderView.xib in Resources */,
 				8B2B55F3295DD9D500950F1E /* LaunchScreen.storyboard in Resources */,
 				8B2B55F0295DD9D500950F1E /* Assets.xcassets in Resources */,
 			);
@@ -349,6 +364,7 @@
 				8B2B55EE295DD9D400950F1E /* Bankfan.xcdatamodeld in Sources */,
 				8B29E1582960174300951DD8 /* OnboardingVC.swift in Sources */,
 				8B2FA359296106B60057A74D /* LogoutVC.swift in Sources */,
+				8B3793592961D1BA006AFA96 /* AccountSummaryHeaderView.swift in Sources */,
 				8B3793542961B71B006AFA96 /* MoreVC.swift in Sources */,
 				8B2B55E4295DD9D400950F1E /* AppDelegate.swift in Sources */,
 				8B37934E2961B60C006AFA96 /* MainVC.swift in Sources */,
