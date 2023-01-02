@@ -20,9 +20,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         window?.backgroundColor = .systemBackground
+        
         loginVC.delegate = self
-//        self.setRootViewController( mainVC)
-        self.setRootViewController(AccountSummaryVC())
+        
+        mainVC.setStatusBar()
+        
+        UINavigationBar.appearance().isTranslucent = false
+        UINavigationBar.appearance().backgroundColor = .Asset.primary
+        
+        self.setRootViewController(loginVC)
         
         return true
     }
@@ -33,7 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 extension AppDelegate : LoginVCDelegate {
     func didLogin() {
         if LocalState.hasOnboarded {
-            self.setRootViewController(LogoutVC())
+            self.setRootViewController(mainVC)
         } else {
             self.setRootViewController(OnboardingContainerVC())
         }

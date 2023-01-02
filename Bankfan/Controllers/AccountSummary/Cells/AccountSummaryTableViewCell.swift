@@ -9,10 +9,27 @@ import UIKit
 
 class AccountSummaryTableViewCell: UITableViewCell {
     
+    /// View Model
+    enum AccountType : String {
+        case Banking, CreditCard, Investment
+    }
+    struct ViewModel {
+        let accountType : AccountType
+        let accountName : String
+        let balance : Decimal
+        
+        var balanceAsAttributedString: NSAttributedString {
+            return CurrencyFormatter().makeAttributedCurrency(balance)
+        }
+    }
+    private var vm : ViewModel?
+    /// end of View Model
+    
+    // Meta
     public static var identifier: String {
         return String(describing: self)
     }
-    public static let rowHeight : CGFloat = 100
+    public static let rowHeight : CGFloat = 112
     
     // Views
     private let typeLabel = UILabel()
@@ -22,7 +39,7 @@ class AccountSummaryTableViewCell: UITableViewCell {
     private let balanceLabel = UILabel()
     private let balanceAmountLabel = UILabel()
     private let chevronImageView = UIImageView()
-     
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.style()
@@ -35,6 +52,7 @@ class AccountSummaryTableViewCell: UITableViewCell {
     
 }
 
+// MARK: - Style and Layout
 extension AccountSummaryTableViewCell {
     
     private func style () {
@@ -42,7 +60,6 @@ extension AccountSummaryTableViewCell {
         typeLabel.translatesAutoresizingMaskIntoConstraints = false
         typeLabel.font = UIFont.preferredFont(forTextStyle: .caption1)
         typeLabel.adjustsFontForContentSizeCategory = true
-        typeLabel.text = "Account type"
         
         // Underline view
         underlineView.translatesAutoresizingMaskIntoConstraints = false
@@ -51,21 +68,18 @@ extension AccountSummaryTableViewCell {
         // Name label
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
         nameLabel.font = UIFont.preferredFont(forTextStyle: .body)
-        nameLabel.text = "Account name"
         
         /// Balance views
         balanceStackView.translatesAutoresizingMaskIntoConstraints = false
         balanceStackView.axis = .vertical
         balanceStackView.spacing = 0
-
+        
         balanceLabel.translatesAutoresizingMaskIntoConstraints = false
         balanceLabel.font = UIFont.preferredFont(forTextStyle: .body)
         balanceLabel.textAlignment = .right
-        balanceLabel.text = "Some balance"
-
+        
         balanceAmountLabel.translatesAutoresizingMaskIntoConstraints = false
         balanceAmountLabel.textAlignment = .right
-        balanceAmountLabel.text = "$929,466.63"
         /// end of Balance views
         
         // Chevron image view
@@ -114,7 +128,30 @@ extension AccountSummaryTableViewCell {
             chevronImageView.topAnchor.constraint(equalToSystemSpacingBelow: underlineView.bottomAnchor, multiplier: 1),
             trailingAnchor.constraint(equalToSystemSpacingAfter: chevronImageView.trailingAnchor, multiplier: 1),
         ])
-
+        
     }
     
+}
+
+// MARK: - Actions
+extension AccountSummaryTableViewCell {
+    public func configure (with vm : ViewModel) {
+        self.vm = vm
+        
+        typeLabel.text = vm.accountType.rawValue
+        nameLabel.text = vm.accountName
+        balanceAmountLabel.attributedText = vm.balanceAsAttributedString
+        
+        switch vm.accountType {
+        case .Banking:
+            underlineView.backgroundColor = .Asset.primary
+            balanceLabel.text = "Current balance"
+        case .CreditCard:
+            underlineView.backgroundColor = .systemOrange
+            balanceLabel.text = "Current balance"
+        case .Investment:
+            underlineView.backgroundColor = .systemPurple
+            balanceLabel.text = "Value"
+        }
+    }
 }
