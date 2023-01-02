@@ -157,22 +157,36 @@ extension LoginVC {
     
     private func login () {
         guard let username = self.credentials.username, let password = self.credentials.password else { return}
-        
-        self.signInBtn.configuration?.showsActivityIndicator = true
-        
-        self.delegate?.didLogin()
-        return;
-        
-        if username.isEmpty || password.isEmpty {
-            self.configureErrorMessage(with: "Username or password can't be empty")
-        } else {
+    
+        switch true {
+        case username == "arf" && password == "arf" :
+            self.signInBtn.configuration?.showsActivityIndicator = true
+            self.delegate?.didLogin()
+            break;
+        case username.isEmpty || password.isEmpty :
+            self.configureErrorMessage(with: "Empty username or password.")
+            break;
+        default:
             self.configureErrorMessage(with: "Incorrect username or password.")
+            break;
         }
     }
     
     private func configureErrorMessage(with message : String) {
         self.errorMessageLabel.isHidden = false
         self.errorMessageLabel.text = message
+        self.shakeSignInBtn()
+    }
+    
+    private func shakeSignInBtn () {
+        let animation = CAKeyframeAnimation()
+           animation.keyPath = "position.x"
+           animation.values = [0, 10, -10, 10, 0]
+           animation.keyTimes = [0, 0.16, 0.5, 0.83, 1]
+           animation.duration = 0.4
+
+        animation.isAdditive = true
+        self.signInBtn.layer.add(animation, forKey: "shake")
     }
 }
 
