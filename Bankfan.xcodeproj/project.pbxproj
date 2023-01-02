@@ -12,6 +12,8 @@
 		8B027EF82962948E006937BF /* Decimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B027EF72962948E006937BF /* Decimal.swift */; };
 		8B027EFA2962953D006937BF /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B027EF92962953D006937BF /* CurrencyFormatter.swift */; };
 		8B027EFC2962BD5D006937BF /* CurrencyFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B027EFB2962BD5D006937BF /* CurrencyFormatterTests.swift */; };
+		8B027EFE2962E18F006937BF /* Notification.Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B027EFD2962E18F006937BF /* Notification.Name.swift */; };
+		8B027F002962EA8C006937BF /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B027EFF2962EA8B006937BF /* UITextField.swift */; };
 		8B29E144295DDB1F00951DD8 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B29E143295DDB1F00951DD8 /* LoginVC.swift */; };
 		8B29E14A295DE41500951DD8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B29E149295DE41500951DD8 /* LoginView.swift */; };
 		8B29E14C295F1F5000951DD8 /* OnboardingContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B29E14B295F1F5000951DD8 /* OnboardingContainerVC.swift */; };
@@ -23,7 +25,7 @@
 		8B2B55FE295DD9D600950F1E /* BankfanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2B55FD295DD9D600950F1E /* BankfanTests.swift */; };
 		8B2B5608295DD9D600950F1E /* BankfanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2B5607295DD9D600950F1E /* BankfanUITests.swift */; };
 		8B2B560A295DD9D600950F1E /* BankfanUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2B5609295DD9D600950F1E /* BankfanUITestsLaunchTests.swift */; };
-		8B2FA359296106B60057A74D /* LogoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2FA358296106B60057A74D /* LogoutVC.swift */; };
+		8B2FA359296106B60057A74D /* LogoutDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2FA358296106B60057A74D /* LogoutDelegate.swift */; };
 		8B2FA35C29616B980057A74D /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2FA35B29616B980057A74D /* LocalState.swift */; };
 		8B37934A2961B239006AFA96 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3793492961B239006AFA96 /* UIColor.swift */; };
 		8B37934C2961B390006AFA96 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B37934B2961B390006AFA96 /* UIViewController.swift */; };
@@ -58,6 +60,8 @@
 		8B027EF72962948E006937BF /* Decimal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decimal.swift; sourceTree = "<group>"; };
 		8B027EF92962953D006937BF /* CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
 		8B027EFB2962BD5D006937BF /* CurrencyFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatterTests.swift; sourceTree = "<group>"; };
+		8B027EFD2962E18F006937BF /* Notification.Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.Name.swift; sourceTree = "<group>"; };
+		8B027EFF2962EA8B006937BF /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		8B29E143295DDB1F00951DD8 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		8B29E149295DE41500951DD8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		8B29E14B295F1F5000951DD8 /* OnboardingContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerVC.swift; sourceTree = "<group>"; };
@@ -73,7 +77,7 @@
 		8B2B5603295DD9D600950F1E /* BankfanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankfanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B2B5607295DD9D600950F1E /* BankfanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankfanUITests.swift; sourceTree = "<group>"; };
 		8B2B5609295DD9D600950F1E /* BankfanUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankfanUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		8B2FA358296106B60057A74D /* LogoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutVC.swift; sourceTree = "<group>"; };
+		8B2FA358296106B60057A74D /* LogoutDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutDelegate.swift; sourceTree = "<group>"; };
 		8B2FA35B29616B980057A74D /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
 		8B3793492961B239006AFA96 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		8B37934B2961B390006AFA96 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
@@ -159,7 +163,7 @@
 		8B29E15A2960176300951DD8 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				8B2FA358296106B60057A74D /* LogoutVC.swift */,
+				8B2FA358296106B60057A74D /* LogoutDelegate.swift */,
 				8B29E143295DDB1F00951DD8 /* LoginVC.swift */,
 			);
 			path = Auth;
@@ -188,14 +192,14 @@
 		8B2B55E2295DD9D400950F1E /* Bankfan */ = {
 			isa = PBXGroup;
 			children = (
-				8B3793482961B22C006AFA96 /* Extensions */,
-				8B2FA35A29616B8D0057A74D /* Utilities */,
 				8B2B55E3295DD9D400950F1E /* AppDelegate.swift */,
 				8B2B55EF295DD9D500950F1E /* Assets.xcassets */,
 				8B2B55EC295DD9D400950F1E /* Bankfan.xcdatamodeld */,
 				8B29E146295DE3EC00951DD8 /* Controllers */,
+				8B3793482961B22C006AFA96 /* Extensions */,
 				8B2B55F4295DD9D500950F1E /* Info.plist */,
 				8B2B55F1295DD9D500950F1E /* LaunchScreen.storyboard */,
+				8B2FA35A29616B8D0057A74D /* Utilities */,
 				8B29E147295DE40400951DD8 /* Views */,
 			);
 			path = Bankfan;
@@ -231,10 +235,12 @@
 		8B3793482961B22C006AFA96 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				8B027EFD2962E18F006937BF /* Notification.Name.swift */,
 				8B3793492961B239006AFA96 /* UIColor.swift */,
 				8B37934B2961B390006AFA96 /* UIViewController.swift */,
 				8B3793552961B8D3006AFA96 /* UINavigationBar.swift */,
 				8B027EF72962948E006937BF /* Decimal.swift */,
+				8B027EFF2962EA8B006937BF /* UITextField.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -391,7 +397,8 @@
 			files = (
 				8B2B55EE295DD9D400950F1E /* Bankfan.xcdatamodeld in Sources */,
 				8B29E1582960174300951DD8 /* OnboardingVC.swift in Sources */,
-				8B2FA359296106B60057A74D /* LogoutVC.swift in Sources */,
+				8B027F002962EA8C006937BF /* UITextField.swift in Sources */,
+				8B2FA359296106B60057A74D /* LogoutDelegate.swift in Sources */,
 				8B3793592961D1BA006AFA96 /* AccountSummaryHeaderView.swift in Sources */,
 				8B3793542961B71B006AFA96 /* MoreVC.swift in Sources */,
 				8B2B55E4295DD9D400950F1E /* AppDelegate.swift in Sources */,
@@ -401,6 +408,7 @@
 				8B027EF82962948E006937BF /* Decimal.swift in Sources */,
 				8B37934C2961B390006AFA96 /* UIViewController.swift in Sources */,
 				8B37934A2961B239006AFA96 /* UIColor.swift in Sources */,
+				8B027EFE2962E18F006937BF /* Notification.Name.swift in Sources */,
 				8B3793562961B8D3006AFA96 /* UINavigationBar.swift in Sources */,
 				8B29E14C295F1F5000951DD8 /* OnboardingContainerVC.swift in Sources */,
 				8B29E14A295DE41500951DD8 /* LoginView.swift in Sources */,

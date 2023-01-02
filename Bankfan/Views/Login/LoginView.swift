@@ -47,11 +47,10 @@ extension LoginView {
         self.passwordTextField.placeholder = "Password"
         self.passwordTextField.isSecureTextEntry = true
         self.passwordTextField.delegate = self
+        self.passwordTextField.enablePasswordToggle()
         
         self.dividerView.translatesAutoresizingMaskIntoConstraints = false
         self.dividerView.backgroundColor = .secondarySystemFill
-        
-        
     }
     
     private func layout () {
