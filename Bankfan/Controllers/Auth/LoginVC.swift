@@ -159,7 +159,7 @@ extension LoginVC {
         guard let username = self.credentials.username, let password = self.credentials.password else { return}
     
         switch true {
-        case username == "arf" && password == "arf" :
+        case username.isEmpty && password.isEmpty : // allows empty username and password for testing purpose
             self.signInBtn.configuration?.showsActivityIndicator = true
             self.delegate?.didLogin()
             break;
