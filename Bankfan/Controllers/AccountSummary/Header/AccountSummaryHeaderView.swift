@@ -11,7 +11,20 @@ import UIKit
 class AccountSummaryHeaderView : UIView {
     
     @IBOutlet private var contentView: UIView!
+    @IBOutlet private var welcomeLabel: UILabel!
+    @IBOutlet private var dateLabel: UILabel!
     private let shakeyBellView = ShakeyBellView()
+    
+    // View model
+    private var vm : ViewModel?
+    struct ViewModel {
+        let welcomeMessage : String
+        let date : Date
+        
+        var dateFormatted : String {
+            return date.monthDayYearString
+        }
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -19,7 +32,7 @@ class AccountSummaryHeaderView : UIView {
     }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: coder)
     }
     
     override var intrinsicContentSize: CGSize {
@@ -48,5 +61,13 @@ class AccountSummaryHeaderView : UIView {
             shakeyBellView.trailingAnchor.constraint(equalTo: trailingAnchor),
             shakeyBellView.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
+    }
+}
+
+extension AccountSummaryHeaderView {
+    public func configure (with vm : ViewModel) {
+        self.vm = vm
+        self.welcomeLabel.text = vm.welcomeMessage
+        self.dateLabel.text = vm.dateFormatted
     }
 }
