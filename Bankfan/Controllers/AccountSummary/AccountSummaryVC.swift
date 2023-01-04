@@ -11,6 +11,7 @@ class AccountSummaryVC: UIViewController {
     
     // Data
     private var accounts = [AccountSummaryTableViewCell.ViewModel]()
+    private var isAccountsLoaded = false
     
     // View
     var tableView = UITableView()
@@ -35,7 +36,7 @@ extension AccountSummaryVC {
         setupTableView()
         setupTableHeaderView()
         setupRefreshControl()
-        fetchData()
+        // fetchData() /// Disabled for testing the skeleton loader
     }
     
     func setupNavigationBar() {
@@ -59,7 +60,12 @@ extension AccountSummaryVC {
         tableView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(tableView)
         
-        tableView.register(AccountSummaryTableViewCell.self, forCellReuseIdentifier: AccountSummaryTableViewCell.identifier)
+        tableView.register(
+            AccountSummaryTableViewCell.self, forCellReuseIdentifier: AccountSummaryTableViewCell.identifier
+        )
+        tableView.register(
+            AccountSummarySkeletonTableViewCell.self, forCellReuseIdentifier: AccountSummarySkeletonTableViewCell.identifier
+        )
         tableView.rowHeight = AccountSummaryTableViewCell.rowHeight
         tableView.tableFooterView = UIView()
         
@@ -82,6 +88,8 @@ extension AccountSummaryVC {
     }
     
     private func fetchData() {
+        self.isAccountsLoaded = false
+        
         let accounts = [
             AccountSummaryTableViewCell.ViewModel(accountType: .Banking,
                                                   accountName: "Basic Savings",
@@ -104,6 +112,7 @@ extension AccountSummaryVC {
         ]
         
         self.accounts = accounts
+        self.isAccountsLoaded = true
         self.tableView.reloadData()
         self.tableView.refreshControl?.endRefreshing()
     }
@@ -123,14 +132,24 @@ extension AccountSummaryVC {
 // MARK: - Table View Data Source
 extension AccountSummaryVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard self.accounts.isEmpty == false else { return .init()  }
-        let cell = tableView.dequeueReusableCell(withIdentifier: AccountSummaryTableViewCell.identifier, for: indexPath) as! AccountSummaryTableViewCell
-        cell.configure(with: self.accounts[indexPath.row])
-        return cell
+        switch true {
+        case self.isAccountsLoaded && !self.accounts.isEmpty:
+            let cell = tableView.dequeueReusableCell(
+                withIdentifier: AccountSummaryTableViewCell.identifier, for: indexPath)
+                as! AccountSummaryTableViewCell
+            cell.configure(with: self.accounts[indexPath.row])
+            return cell
+        default:
+            let cell = tableView.dequeueReusableCell(
+                withIdentifier: AccountSummarySkeletonTableViewCell.identifier, for: indexPath)
+                as! AccountSummarySkeletonTableViewCell
+            return cell
+        }
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.accounts.count
+        return self.isAccountsLoaded ? self.accounts.count : 10
     }
 }
 
